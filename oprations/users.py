@@ -35,7 +35,7 @@ class UsersOpration:
         async with self.db_session as session:
             user_data = await session.scalar(query)
             if user_data is None:
-                raise ValidationErr('User not found ')
+                raise ValidationErr('User not foundddddd ')
             await session.execute(update_query)
             await session.commit()
             user_data.username = new_username
